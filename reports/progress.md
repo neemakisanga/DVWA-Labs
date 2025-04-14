@@ -7,25 +7,24 @@ Below is my current progress in testing and documenting various vulnerabilities 
 ### Completed
 
 - [x] **Brute Force** - *Completed on 2025-04-03*
-  - Used Hydra with custom wordlist and rockyou.txt
-  - Successfully identified multiple valid credentials
-  - Created detailed documentation with screenshots
+  - Used Hydra and Burp Suite across Low, Medium, and High levels.
+  - Successfully identified credentials and bypassed CSRF tokens.
+  - Created detailed documentation with screenshots.
 
 ### In Progress
 
-- [ ] **SQL Injection**
-  - Basic reconnaissance completed
-  - Need to test on medium and high security levels
-  - Need to document extraction of database structure
+- [ ] **Command Injection**
+  - Initial reconnaissance needed.
+  - Plan to test on low/medium/high levels.
 
 ### Not Started
+
+- [ ] **SQL Injection**
 
 - [ ] **Cross-Site Scripting (XSS)**
   - Reflected XSS
   - Stored XSS
   - DOM-based XSS
-  
-- [ ] **Command Injection**
 
 - [ ] **File Inclusion**
   - Local File Inclusion (LFI)
@@ -50,9 +49,9 @@ Below is my current progress in testing and documenting various vulnerabilities 
 
 ## Next Tasks
 
-1. Complete SQL Injection testing at all security levels
-2. Research and prepare for XSS testing
-3. Update documentation templates based on brute force experience
+1. Begin Command Injection testing.
+2. Research common Command Injection payloads and techniques.
+3. Document findings for Command Injection.
 
 ## Resources
 

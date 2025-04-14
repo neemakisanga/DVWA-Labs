@@ -1,19 +1,19 @@
 # DVWA Docker Environment
 
-This repository contains a Docker Compose configuration for running DVWA (Damn Vulnerable Web Application) for practicing OWASP Top 10 vulnerabilities.
+This repository contains a Docker Compose configuration for running DVWA (Damn Vulnerable Web Application) and documentation from my exercises practicing OWASP Top 10 vulnerabilities.
 
 ## Project Structure
 
 ```
 .
-├── docker-compose.yml    # Docker configuration for DVWA
-├── setup/                # Network configuration guides
-│   └── host-networking.md # How to configure networking between host and Kali VM
-├── exploits/             # Documentation for each exploit type
-│   ├── sql-injection.md  # SQL injection techniques
-│   └── brute-force.md    # Brute force attack techniques
-└── reports/              # Vulnerability reports from your testing
-    └── README.md         # Report templates and guidelines
+├── README.md                     # This overview
+├── docker-compose.yml            # Docker configuration for DVWA
+├── setup/                        # Network configuration guides
+│   └── host-networking.md         # How to configure networking between host and Kali VM
+├── reports/                      # Vulnerability reports and walkthroughs from my testing
+│   ├── brute-force-walkthrough.md # My brute force testing journey
+│   └── progress.md                # Tracking my testing progress
+└── images/                       # Supporting images for reports
 ```
 
 ## Prerequisites
@@ -42,29 +42,22 @@ docker compose up -d
 
 See the [host-networking.md](setup/host-networking.md) guide for detailed instructions on configuring the network between your Kali Linux VM and the Docker container.
 
-## OWASP Top 10 Vulnerabilities to Practice
+## OWASP Top 10 Vulnerabilities Explored
 
-- Injection
-- Broken Authentication
-- Sensitive Data Exposure
-- XML External Entities (XXE)
-- Broken Access Control
-- Security Misconfiguration
+This project focuses on hands-on exploration of vulnerabilities like:
+
+- Brute Force (See [reports/brute-force-walkthrough.md](reports/brute-force-walkthrough.md))
+- Command Injection (In Progress - Tracked in [reports/progress.md](reports/progress.md))
+- SQL Injection
 - Cross-Site Scripting (XSS)
-- Insecure Deserialization
-- Using Components with Known Vulnerabilities
-- Insufficient Logging & Monitoring
-
-## Exploit Guides
-
-Check the [exploits](exploits/) directory for detailed guides on exploiting specific vulnerabilities:
-
-- [SQL Injection](exploits/sql-injection.md)
-- [Brute Force](exploits/brute-force.md)
+- File Inclusion
+- File Upload
+- CSRF
+- And others...
 
 ## Reporting
 
-Use the report templates in the [reports](reports/) directory to document your findings.
+My detailed findings and walkthroughs for each vulnerability tested are documented in the [reports](reports/) directory.
 
 ## Stopping the Environment
 
